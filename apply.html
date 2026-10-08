@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Apply — GOOD COMPANY Casting</title>
+<meta name="description" content="Apply for a role in GOOD COMPANY. No fee, no agent required. Self-tapes welcome. Submissions close 30 April 2026.">
+<meta name="theme-color" content="#FF4A2E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__in">
+    <a class="brand" href="index.html">
+      <div class="brand__mark"><span>GC</span></div>
+      <div class="brand__txt"><b>Good Company</b><i>Now Casting</i></div>
+    </a>
+    <div class="nav__links">
+      <a href="index.html" data-nav="index.html">The Film</a>
+      <a href="roles.html" data-nav="roles.html">Roles</a>
+      <a href="production.html" data-nav="production.html">Production</a>
+      <a href="production.html#faq">FAQ</a>
+    </div>
+    <div class="nav__cta">
+      <a class="btn btn--ghost btn--sm" href="roles.html">Back to roles</a>
+    </div>
+  </div>
+</nav>
+
+<header class="section" style="padding-top:56px; padding-bottom:36px">
+  <div class="wrap">
+    <p class="eyebrow">Casting &nbsp;/&nbsp; Application</p>
+    <h1 class="h-lg" style="max-width:16ch">Tell us<br>about you.</h1>
+    <p class="lede" style="margin-top:22px">
+      Takes about two minutes. There is no fee to apply, ever &mdash; and we read every submission ourselves.
+    </p>
+  </div>
+</header>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div id="applyOut" hidden></div>
+
+    <div class="apply-layout">
+      <!-- ====== FORM ====== -->
+      <form class="form" id="applyForm" novalidate>
+        <div class="form__row">
+          <div class="field">
+            <label for="aName">Full name</label>
+            <input id="aName" type="text" required autocomplete="name" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="aEmail">Email</label>
+            <input id="aEmail" type="email" required autocomplete="email" placeholder="you@email.com">
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="field">
+            <label for="aPhone">Phone</label>
+            <input id="aPhone" type="tel" autocomplete="tel" placeholder="+44">
+          </div>
+          <div class="field">
+            <label for="aLocation">Where you&#39;re based</label>
+            <input id="aLocation" type="text" placeholder="e.g. Manchester, UK">
+            <span class="hint">We cover travel and accommodation where required &mdash; tell us if that matters.</span>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="field">
+            <label for="aRole">Which role?</label>
+            <select id="aRole" name="role"></select>
+          </div>
+          <div class="field">
+            <label for="aAge">Playing age</label>
+            <input id="aAge" type="text" placeholder="e.g. 24&ndash;30">
+            <span class="hint">Not your actual age &mdash; the age you read as on camera.</span>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="field">
+            <label for="aAgent">Agent / rep (optional)</label>
+            <input id="aAgent" type="text" placeholder="Agency name, or leave blank">
+          </div>
+          <div class="field">
+            <label for="aPronouns">Pronouns (optional)</label>
+            <input id="aPronouns" type="text" placeholder="e.g. she/they">
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="field">
+            <label for="aHeadshot">Headshot link</label>
+            <input id="aHeadshot" type="url" placeholder="https://">
+            <span class="hint">A Dropbox, Google Drive or Spotlight link is perfect.</span>
+          </div>
+          <div class="field">
+            <label for="aReel">Showreel link</label>
+            <input id="aReel" type="url" placeholder="https://">
+            <span class="hint">Optional. Unlisted YouTube or Vimeo is fine.</span>
+          </div>
+        </div>
+
+        <div class="form__row form__row--full">
+          <div class="field">
+            <label>What we should know</label>
+            <div class="checks" style="margin-top:6px">
+              <label class="check"><input id="aTape" type="checkbox" name="opt" value="selftape"> I&#39;d like to send a self-tape</label>
+              <label class="check"><input type="checkbox" name="opt" value="any"> Open to any role</label>
+              <label class="check"><input type="checkbox" name="opt" value="travel"> May need travel support</label>
+              <label class="check"><input type="checkbox" name="opt" value="access"> Have access requirements</label>
+              <label class="check"><input type="checkbox" name="opt" value="under18"> Applying with a guardian</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__row form__row--full">
+          <div class="field">
+            <label for="aNote">Anything else</label>
+            <textarea id="aNote" placeholder="Why this role, what you&#39;ve done, what you&#39;d bring &mdash; whatever feels useful. Plain text, links, or a short paragraph."></textarea>
+            <span class="hint">We do not need a CV. A paragraph is plenty.</span>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn--primary btn--wide" type="submit" style="max-width:280px">Send application &rsaquo;</button>
+          <a class="btn btn--ghost" href="roles.html">Read the breakdown first</a>
+        </div>
+        <p style="margin:8px 0 0; color:var(--muted); font-size:13.5px; max-width:62ch">
+          By sending this you agree we may hold your details for casting purposes for this production only.
+          We never share them, never charge a fee, and delete everything 12 months after the shoot wraps.
+        </p>
+      </form>
+
+      <!-- ====== SUMMARY ====== -->
+      <aside class="summary">
+        <h3>Your application</h3>
+        <div class="summary__role" id="sumRole">
+          <b>General</b>
+          <span>Open to any role</span>
+        </div>
+        <dl>
+          <div class="row"><dt>Production</dt><dd><b>Good Company</b></dd></div>
+          <div class="row"><dt>Format</dt><dd><b>Feature &middot; 104 min</b></dd></div>
+          <div class="row"><dt>Shoot</dt><dd><b>14 Jul &ndash; 22 Aug</b></dd></div>
+          <div class="row"><dt>Base</dt><dd><b>London &amp; Manchester</b></dd></div>
+          <div class="row"><dt>Rate</dt><dd><b>&pound;150 / day</b></dd></div>
+          <div class="row"><dt>Deadline</dt><dd><b>30 Apr 2026</b></dd></div>
+          <div class="row"><dt>Fee to apply</dt><dd><b>&pound;0 &middot; Always</b></dd></div>
+        </dl>
+        <p style="margin:18px 0 0; color:var(--muted); font-size:13.5px; line-height:1.55">
+          Casting by <strong style="color:var(--ink)">Nadia Okafor</strong> at Halcyon Casting.
+          If we&#39;d like to see more you&#39;ll hear within 10 working days with sides and a self-tape brief.
+        </p>
+        <a class="btn btn--teal btn--wide" style="margin-top:18px" href="production.html#contact">Ask a question first</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="spec-grid">
+      <div class="spec">
+        <b>What happens next</b>
+        <strong>Within 10 days</strong>
+        <span>We email everyone. If we&#39;d like to see more, you get sides and a self-tape brief.</span>
+      </div>
+      <div class="spec">
+        <b>Self-tape</b>
+        <strong>Simple is better</strong>
+        <span>Plain background, natural light, sound matters more than picture. Two minutes, one take.</span>
+      </div>
+      <div class="spec">
+        <b>Chemistry reads</b>
+        <strong>In person or online</strong>
+        <span>From mid-May. Group reads, so you&#39;ll meet the people you&#39;d be acting opposite.</span>
+      </div>
+      <div class="spec">
+        <b>After that</b>
+        <strong>Offers from 15 May</strong>
+        <span>Rolling. Contracts, schedule and travel confirmed before June. No waiting around.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <h2>Good <em>Company</em></h2>
+      <a class="btn btn--sun" href="roles.html">See open roles &nbsp;&rsaquo;</a>
+    </div>
+    <div class="footer__cols">
+      <section>
+        <h4>The Film</h4>
+        <ul>
+          <li><a href="index.html#story">Story</a></li>
+          <li><a href="index.html#crews">The two crews</a></li>
+          <li><a href="index.html#tone">Tone &amp; music</a></li>
+          <li><a href="production.html">Production</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Casting</h4>
+        <ul>
+          <li><a href="roles.html">Open roles</a></li>
+          <li><a href="apply.html">Apply now</a></li>
+          <li><a href="apply.html?selftape=1">Send a self-tape</a></li>
+          <li><a href="production.html#faq">FAQ</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Practicalities</h4>
+        <ul>
+          <li><a href="production.html#timeline">Timeline</a></li>
+          <li><a href="production.html#pay">Rate &amp; contract</a></li>
+          <li><a href="production.html#travel">Travel &amp; access</a></li>
+          <li><a href="production.html#contact">Contact us</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Contact</h4>
+        <address>
+          Halcyon Casting &mdash; Nadia Okafor<br>
+          casting@goodcompany.film<br>
+          Long Weekend Pictures<br>
+          Studio 4, Hackney Wick, London
+        </address>
+      </section>
+    </div>
+    <div class="footer__foot">
+      <span>&copy; 2026 Long Weekend Pictures. Good Company.</span>
+      <span>Now casting &nbsp;/&nbsp; 8 roles &nbsp;/&nbsp; Shooting Jul&ndash;Aug 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
